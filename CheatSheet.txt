@@ -1,0 +1,25 @@
+**** WEB CONFIG FILE TO BE ADDED *****
+
+ <connectionStrings>
+     <add name="DefaultConnection" connectionString="Data Source=JARVIS\SQLEXPRESS;Initial Catalog=TrainingDB;Integrated Security=True;"/>
+</connectionStrings>
+
+**** TO INSTALL SWAGGER *****
+
+--> Manage NuGet Packages --> Swashbuckle 
+
+**** use sql connection ****
+con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString());
+con.Open();
+
+**** API to hit ****
+
+Json format to be created to Hit API
+
+{
+	NAME: "Raja",
+	USERNAME: "Raj_Dev",
+	PASSWORD: "1231",
+	MOBILE: "8075207784",
+	EMAIL: "raja_dev@gmail.com"
+}
